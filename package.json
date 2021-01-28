@@ -1,8 +1,6 @@
 {
-  "name": "@hackclub/theme-starter",
+  "name": "@MEA-Hack-Club/MEAHackClubWebsite",
   "version": "0.0.1",
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
-  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next",
