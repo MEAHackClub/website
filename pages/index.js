@@ -7,7 +7,7 @@ import Head from 'next/head';
 export default function Page(){
     return (
         <div>
-            <div className="content" sx={{zIndex:'1'}}> 
+            <div className="content" sx={{zIndex:'100'}}> 
                 <Head>
                     <title>MEA Hack Club</title>
                 </Head>
