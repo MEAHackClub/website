@@ -16,7 +16,7 @@ export default function Nav(){
             <NavLink href="projects" p={2}>
                 Projects
             </NavLink>
-        <ColorSwitcher />
+            <ColorSwitcher />
         </Flex>
     );
 }

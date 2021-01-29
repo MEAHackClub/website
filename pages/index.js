@@ -11,7 +11,6 @@ export default function Page(){
                 <Head>
                     <title>MEA Hack Club</title>
                 </Head>
-                <Nav/>
             </div>
 
             <Image src={Theme.images.home_background}
