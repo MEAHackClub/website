@@ -10,9 +10,9 @@ export default function Page(){
                     <Heading as="h1" color="red" variant="title" >
                         MEA Hack Club
                     </Heading>
-                    <Text sx={{ paddingTop: 3 }}>
-                        <NavLink href="https://github.com/MEA-Hack-Club" sx={{ marginRight: '10px' }}>GitHub</NavLink>
-                        <NavLink href="/projects" sx={{ marginLeft: '10px' }}>Projects</NavLink>
+                    <Text sx={{ paddingTop: '3', display:'flex',alignItems:'center',justifyContent:'center' }}>
+                        <NavLink href="https://github.com/MEA-Hack-Club" sx={{ m:'10px'}}>GitHub</NavLink>
+                        <NavLink href="/projects" sx={{ m:'10px'}}>Projects</NavLink>
                     </Text>
                 </Container>
             </Box>
