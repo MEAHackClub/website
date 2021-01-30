@@ -10,12 +10,10 @@ export default class extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-            <title>MEA Hack Club</title>
-        </Head>
         <body>
           <InitializeColorMode />
           <Main />
+          <Head />
           <NextScript />
         </body>
       </Html>

@@ -5,6 +5,9 @@ import Head from 'next/head';
 export default function Page(){
     return (
         <div>
+            <Head>
+                <title>MEA Hack Club</title>
+            </Head>
             <Box sx={{ bg: 'sheet', color:'text'}} as="header">
                 <Container sx={{ paddingTop: 5, paddingBottom: [3, 4], textAlign: 'center' }}>
                     <Heading as="h1" color="red" variant="title" >

@@ -1,9 +1,14 @@
 import { Heading, Button, Container, Box, IconButton, NavLink } from 'theme-ui';
+import Head from 'next/head'
 import Content from '../components/projects-content.mdx'
 
 export default function Page(){
     return(
         <div>
+            <Head>
+                <title>Projects | MEA Hack Club</title>
+            </Head>
+
             <NavLink href="/">
                 <Button sx={{ p: [1, 3], m: "2" }}>
                     <IconButton>
