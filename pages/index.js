@@ -1,6 +1,5 @@
 import theme from '@hackclub/theme';
 import { NavLink, Box, jsx, Text, Link, Heading, Container } from 'theme-ui';
-import Nav from '../components/nav';
 import Theme from '../lib/theme';
 import Head from 'next/head';
 
