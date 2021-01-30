@@ -7,7 +7,7 @@ export default function SignupButton(){
                 position: 'absolute',
                 top: 2,
                 right: 5,
-                p: 3,
+                p: [2, 3],
             }}>
                 Sign Up
             </Button>
