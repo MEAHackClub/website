@@ -8,9 +8,6 @@ export default function Page(){
     return (
         <div>
             <div className="content" sx={{zIndex:'100'}}> 
-                <Head>
-                    <title>MEA Hack Club</title>
-                </Head>
             </div>
 
             <Image src={Theme.images.home_background}
