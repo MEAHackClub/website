@@ -1,4 +1,4 @@
-import { Button, Container, Box, IconButton, NavLink } from 'theme-ui';
+import { Heading, Button, Container, Box, IconButton, NavLink } from 'theme-ui';
 import Content from '../components/projects-content.mdx'
 
 export default function Page(){
@@ -14,9 +14,12 @@ export default function Page(){
                     Home
                 </Button>
             </NavLink>
-            <Box sx={{ textAlign: 'center' }}>
+            <Box sx={{ mt: '4', textAlign: 'center' }}>
                 <Container>
-                    <Content />
+                    <Heading as="h1" variant="title" >
+                        Current projects
+                    </Heading>
+                    {/* <Content /> */}
                 </Container>
             </Box>
         </div>
