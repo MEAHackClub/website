@@ -5,6 +5,7 @@ import NextApp from 'next/app'
 import theme from '@hackclub/theme'
 import { ThemeProvider } from 'theme-ui'
 import ColorSwitcher from '../components/color-switcher'
+import SignupButton from '../components/sign-up-button'
 
 export default class App extends NextApp {
   render() {
@@ -12,6 +13,7 @@ export default class App extends NextApp {
     return (
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
+        <SignupButton />
         <ColorSwitcher />
       </ThemeProvider>
     )
