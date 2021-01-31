@@ -25,6 +25,7 @@ export default function Page(){
                         Current projects
                     </Heading>
                     {/* <Content /> */}
+                    <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@ShawnZhuang/Hack-Club-17-Choose-Your-Own-Adventure?lite=true&outputonly=1"></iframe>
                 </Container>
             </Box>
         </div>

@@ -1,5 +1,5 @@
 import theme from '@hackclub/theme';
-import { NavLink, Box, jsx, Text, Link, Heading, Container } from 'theme-ui';
+import { NavLink, Box, jsx, Text, Link, Image, Heading, Container } from 'theme-ui';
 import Head from 'next/head';
 
 export default function Page(){
