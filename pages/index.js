@@ -24,7 +24,7 @@ export default function Page(){
                     </Text>
                 </Container>
             </Box>
-            <Container sx={{ textAlign:'center' }}>
+            <Container sx={{ textAlign:'left' }}>
                 <Content/>
             </Container>
             
