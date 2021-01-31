@@ -8,6 +8,9 @@ export default function Page(){
             <Head>
                 <title>MEA Hack Club</title>
             </Head>
+            <Container sx={{position:'absolute'}}>
+                <Image height="100" width="100" src="images/logo.png"/>
+            </Container>
             <Box sx={{ bg: 'sheet', color:'text'}} as="header">
                 <Container sx={{ paddingTop: 5, paddingBottom: [3, 4], textAlign: 'center' }}>
                     <Heading as="h1" color="red" variant="title" >

@@ -14,7 +14,7 @@ export default class extends Document {
           <InitializeColorMode />
           <Main />
           <Head>
-            <link rel="icon" href=""/>
+            <link rel="shortcut icon" href="/static/favicon.ico"/>
           </Head>
           <NextScript />
         </body>
