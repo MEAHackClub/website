@@ -21,10 +21,10 @@ export default function Page(){
             </NavLink>
             <Box sx={{ mt: '4', textAlign: 'center' }}>
                 <Container>
-                    <Heading as="h1" variant="title" >
+                    <Heading as="h1" variant="title" sx={{ mb: 5 }}>
                         Current projects
                     </Heading>
-                    {/* <Content /> */}
+                    <p>A choose your own adventure game! Press the run button to try it out. </p>
                     <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@ShawnZhuang/Hack-Club-17-Choose-Your-Own-Adventure?lite=true&outputonly=1"></iframe>
                 </Container>
             </Box>
