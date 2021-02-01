@@ -8,8 +8,12 @@ export default function Page(){
         <div>
             <Head>
                 <title>MEA Hack Club</title>
-                <link rel="shortcut icon" href="/static/favicon.ico"/>
-            </Head>
+				<meta
+					property="og:logo"
+					content="https://github.com/MEAHackClub/website/blob/main/static/favicon.ico"
+					size="512x512"
+				/>            
+			</Head>
             <Container sx={{position:'absolute', top:[1,2],width:[100,200]}}>
                 <Image height="100" width="100" src="images/logo.png"/>
             </Container>
