@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Main, NextScript } from 'next/document'
 import { InitializeColorMode } from 'theme-ui'
 
 export default class extends Document {
@@ -13,9 +13,6 @@ export default class extends Document {
         <body>
           <InitializeColorMode />
           <Main />
-          <Head>
-            <link rel="shortcut icon" href="/static/favicon.ico"/>
-          </Head>
           <NextScript />
         </body>
       </Html>
