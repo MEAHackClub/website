@@ -58,7 +58,10 @@ export default function Page(){
             </Text>
             <Text variant="subheadline" sx={{ textAlign: 'center' }}>
                 <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLScK8Wh1Et-XXOkDUrnJwCgVc0x65wlu7mDzVhKJIFS9zOoqMw/viewform">
-                    <Button> 
+                    <Button sx={{
+                        fontSize: [5, 5,5, 1,1],
+                        p: [2, 3],
+                    }}> 
                         Join today!
                     </Button>
                 </NavLink>
