@@ -23,7 +23,7 @@ export default class extends Document {
                 Email us at <b>hackclubmea@gmail.com </b> 
               </Container>
               <Container>
-                &copy; MEA Hack Club 2020
+                &copy; MEA Hack Club 2021
               </Container>
             </Text>
           </footer>
