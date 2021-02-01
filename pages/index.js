@@ -1,5 +1,5 @@
 import theme from '@hackclub/theme';
-import { NavLink, Box, jsx, Text, Link, Image, Heading, Container } from 'theme-ui';
+import { Button, NavLink, Box, jsx, Text, Link, Image, Heading, Container } from 'theme-ui';
 import { Helmet } from 'react-helmet';
 import Head from 'next/head';
 import Content from '../components/index-content.mdx';
@@ -57,7 +57,11 @@ export default function Page(){
                     </code>
             </Text>
         <Text variant="subheadline" sx={{ textAlign: 'center' }}>
-            Join today by completing the sign up form linked at the top of our website!
+            <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLScK8Wh1Et-XXOkDUrnJwCgVc0x65wlu7mDzVhKJIFS9zOoqMw/viewform">
+                <Button> 
+                    Join today!
+                </Button>
+            </NavLink>
         </Text>
         </div>
     );
