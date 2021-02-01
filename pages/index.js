@@ -33,7 +33,7 @@ export default function Page(){
                     <Image sx={{ borderRadius: '50%', width: ['400px', '400px','400px','150px', '150px'], bg: 'white'}} src="images/dna.gif"/> <br/> <br/>
                     Or even while playing games, have you ever wondered while stomping on Goombas, what makes them follow Mario? What could be going through their sinister minds as they go to such lengths to stop that middle aged plumber? <br/> <br/>
                     <Image sx={{ borderRadius: '50%', width: ['400px', '400px','400px','150px', '150px'], bg: 'white'}} src="images/mario.gif"/> <br/> <br/>
-                    Well, the answer to that is code. Code is the like the code is the building block of our virtual world, providing the foundation for everything that you see on your computer. 
+                    Well, the answer to that is code. Code is the like the building block of our virtual world, providing the foundation for everything that you see on your computer. 
                 </code>
             </Text>
             <Text variant="subheadline" sx={{ textAlign: 'center' }}>
