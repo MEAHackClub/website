@@ -25,10 +25,40 @@ export default function Page(){
                     </Text>
                 </Container>
             </Box>
-            <Container sx={{ mt:'5', textAlign:'left' }}>
-                <Content/>
-            </Container>
-            
+            <Text variant="caption" sx={{ m:'5', fontSize:['31px', '31px', '31px', '20px', '20px'], textAlign:'center' }}>
+                <code>
+                    Have you ever stopped while browsing the internet, wondering what makes a website tick? {'    '} <br/> <br/>
+                    <Image sx={{ width: '100px', bg: 'white'}} src="images/clock.gif"/> <br/> <br/>
+                    What plays the role of DNA in websites all over, which are so entangled with our modern day to day lives? <br/> <br/>
+                    <Image sx={{ width: '130px', bg: 'white'}} src="images/dna.gif"/> <br/> <br/>
+                    Or even while playing games, have you ever wondered while stomping on Goombas, what makes them follow Mario? What could be going through their sinister minds as they go to such lengths to stop that middle aged plumber? <br/> <br/>
+                    <Image sx={{ width: '100px', bg: 'white'}} src="images/mario.gif"/> <br/> <br/>
+                    Well, the answer to that is code. Code is the like the code is the building block of our virtual world, providing the foundation for everything that you see on your computer. 
+                </code>
+            </Text>
+            <Text variant="subheadline" sx={{ textAlign: 'center' }}>
+                You'll get a chance to learn all about that, and more, with the MEA Hack Club! 
+            </Text>
+            <Text variant="caption" sx={{ fontSize: 2,m: 5 }}>
+                <code>
+                    At Mt. Everest Academy's only computer science focused club/program, you'll get to:
+                    <ul>
+                        <li>
+                            Work with other MEA students to learn programming and develop games and other cool programs and application- share your projects on this website for others to try out!
+                        </li>
+                        <li>
+                            Beginners and experienced programmers alike are welcomed! Whether you're looking to study computer science in the future or just want to tinker with code for fun, we encourage you to join.
+                        </li>
+                        <li>
+                            Go beyond developing programs and get a chance to connect with community professionals to learn more about the field, and potentially take part in other community initiatives in the future.
+                        </li>
+                    </ul>
+
+                    </code>
+            </Text>
+        <Text variant="subheadline" sx={{ textAlign: 'center' }}>
+            Join today by completing the sign up form linked at the top of our website!
+        </Text>
         </div>
     );
 }
