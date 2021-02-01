@@ -6,8 +6,9 @@ export default function SignupButton(){
             <Button sx={{
                 position: 'absolute',
                 top: 2,
-                right: 5,
+                right: [1, 1, 1, 5, 5],
                 p: [2, 3],
+                fontSize: [5, 5,5, 1,1]
             }}>
                 Sign Up
             </Button>

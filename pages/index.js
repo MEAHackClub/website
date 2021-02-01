@@ -12,10 +12,10 @@ export default function Page(){
                 <link rel="shortcut icon" href="/static/favicon.ico"/>
             </Helmet>
             <Container sx={{position:'absolute', top:[1,2],width:[100,200]}}>
-                <Image height="100" width="100" src="images/logo.png"/>
+                <Image sx={{ width: [200,200,200,100,100] }}src="images/logo.png"/>
             </Container>
             <Box sx={{ bg: 'sheet', color:'text'}} as="header">
-                <Container sx={{ paddingTop: [6,6,6,5,5], paddingBottom: [3, 4], textAlign: 'center' }}>
+                <Container sx={{ paddingTop: ['160px','160px','160px',5,5], paddingBottom: [3, 4], textAlign: 'center' }}>
                     <Heading sx={{fontSize:[7, 7, 7, 6, 6]}} as="h1" color="red" variant="title" >
                         MEA Hack Club
                     </Heading>
