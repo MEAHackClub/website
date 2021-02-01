@@ -24,7 +24,11 @@ export default function Page(){
                     <Heading as="h1" variant="ultratitle" sx={{ mb: 5 }}>
                         Current projects
                     </Heading>
-                    <Text variant="subtitle" sx={{ fontSize: [4,4,4,1,1], m: [4, 4, 4, 2, 2] }}> A choose your own adventure game! Press the run button to try it out. </Text>
+                    <Text sx={{ fontSize: [4,4,4,1,1], m: [4, 4, 4, 2, 2] }}> 
+                        <code>
+                            A choose your own adventure game! Press the run button to try it out. 
+                        </code>
+                    </Text>
                     <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@ShawnZhuang/Hack-Club-17-Choose-Your-Own-Adventure?lite=true&outputonly=1"></iframe>
                 </Container>
             </Box>

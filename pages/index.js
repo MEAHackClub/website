@@ -28,11 +28,11 @@ export default function Page(){
             <Text variant="caption" sx={{ m:'5', fontSize:['31px', '31px', '31px', '20px', '20px'], textAlign:'center' }}>
                 <code>
                     Have you ever stopped while browsing the internet, wondering what makes a website tick? {'    '} <br/> <br/>
-                    <Image sx={{ width: '100px', bg: 'white'}} src="images/clock.gif"/> <br/> <br/>
+                    <Image sx={{ width: ['400px', '400px','400px','100px', '100px'], bg: 'white'}} src="images/clock.gif"/> <br/> <br/>
                     What plays the role of DNA in websites all over, which are so entangled with our modern day to day lives? <br/> <br/>
-                    <Image sx={{ width: '130px', bg: 'white'}} src="images/dna.gif"/> <br/> <br/>
+                    <Image sx={{ width: ['400px', '400px','400px','100px', '100px'], bg: 'white'}} src="images/dna.gif"/> <br/> <br/>
                     Or even while playing games, have you ever wondered while stomping on Goombas, what makes them follow Mario? What could be going through their sinister minds as they go to such lengths to stop that middle aged plumber? <br/> <br/>
-                    <Image sx={{ width: '100px', bg: 'white'}} src="images/mario.gif"/> <br/> <br/>
+                    <Image sx={{ width: ['400px', '400px','400px','100px', '100px'], bg: 'white'}} src="images/mario.gif"/> <br/> <br/>
                     Well, the answer to that is code. Code is the like the code is the building block of our virtual world, providing the foundation for everything that you see on your computer. 
                 </code>
             </Text>
