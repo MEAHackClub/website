@@ -56,13 +56,13 @@ export default function Page(){
 
                     </code>
             </Text>
-        <Text variant="subheadline" sx={{ textAlign: 'center' }}>
-            <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLScK8Wh1Et-XXOkDUrnJwCgVc0x65wlu7mDzVhKJIFS9zOoqMw/viewform">
-                <Button> 
-                    Join today!
-                </Button>
-            </NavLink>
-        </Text>
+            <Text variant="subheadline" sx={{ textAlign: 'center' }}>
+                <NavLink href="https://docs.google.com/forms/d/e/1FAIpQLScK8Wh1Et-XXOkDUrnJwCgVc0x65wlu7mDzVhKJIFS9zOoqMw/viewform">
+                    <Button> 
+                        Join today!
+                    </Button>
+                </NavLink>
+            </Text>
         </div>
     );
 }
