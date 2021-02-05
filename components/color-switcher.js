@@ -8,8 +8,8 @@ const ColorSwitcher = (props) => {
       title={`Switch to ${mode === 'dark' ? 'light' : 'dark'} mode`}
       sx={{
         position: 'absolute',
-        top: [2, 2, 2, 2, 3],
-        right: [2, 2, 2, 4, 5],
+        top: [2, 3],
+        right: [2, 3],
         color: 'primary',
         cursor: 'pointer',
         borderRadius: 'circle',
@@ -22,7 +22,7 @@ const ColorSwitcher = (props) => {
       }}
       {...props}
     >
-      <svg viewBox="0 0 32 32" width={'200%'} height={'200%'} fill="currentcolor">
+      <svg viewBox="0 0 32 32" width={24} height={24} fill="currentcolor">
         <circle
           cx={16}
           cy={16}
