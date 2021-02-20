@@ -1,7 +1,7 @@
 import { Text,Heading, Button, Container, Box, IconButton, NavLink } from 'theme-ui';
 import { Helmet } from 'react-helmet';
-import BackButton from '../components/back-button'
-import Header from '../components/header'
+import BackButton from '../../components/back-button'
+import Header from '../../components/header'
 
 export default function Page(){
     return(
