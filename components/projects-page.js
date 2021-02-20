@@ -12,7 +12,7 @@ export default function Page({ header, title, children}){
                 {title && <Heading as="h1" variant="title" sx={{ textAlign: 'center', mb: 5 }}>
                     {title}
                 </Heading>}
-                <Container sx={{ mb: 3 }}>
+                <Container sx={{ borderRadius: '50px', p: 4, bg: 'sheet', mb: 3 }}>
                     {children}
                 </Container>
             </Container>
