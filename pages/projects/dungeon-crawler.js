@@ -1,5 +1,4 @@
-import { Heading, NavLink, Container } from 'theme-ui';
-import Header from '../../components/header'
+import { NavLink, Container } from 'theme-ui';
 import ProjectsPage from '../../components/projects-page'
 
 export default function Page(){
