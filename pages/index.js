@@ -2,7 +2,6 @@ import theme from '@hackclub/theme';
 import { Button, NavLink, Box, jsx, Text, Link, Image, Heading, Container } from 'theme-ui';
 import { Helmet } from 'react-helmet';
 import Head from 'next/head';
-import Content from '../components/index-content.mdx';
 
 const imgWidth = ['300px', '300px', '300px', '200px', '200px']
 const contentSize = ['31px', '31px', '31px', '20px', '40px'];
