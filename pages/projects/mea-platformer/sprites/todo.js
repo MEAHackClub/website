@@ -1,5 +1,5 @@
 import ProjectsPage from '../../../../components/projects-page'
-import { Grid, Text, Card } from 'theme-ui'
+import { NavLink, Grid, Text, Card } from 'theme-ui'
 // import Content from './todo-sprites.mdx'
 
 export default function Page(){
@@ -10,6 +10,9 @@ export default function Page(){
             header="MEA Platformer - Pixel Art To Do"
             title="MEA Platformer - Pixel Art To Do"
         >
+            <Text variant="lead">
+                Send any ideas to <NavLink href="mailto:hackclubmea@gmail.com">hackclubmea@gmail.com!</NavLink>
+            </Text>
             <Grid width="50%" columns="2">
                 <ElementCard
                     title="Sprites"
