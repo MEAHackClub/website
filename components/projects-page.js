@@ -2,11 +2,11 @@ import { Heading, NavLink, Container } from 'theme-ui';
 import Header from '../components/header'
 import BackButton from '../components/back-button'
 
-export default function Page({ header, title, children}){
+export default function Page({ backButtonHref="/projects", backButtonText="Projects", header, title, children}){
     return (
         <div sx={{ textAlign: "center"}}>
             <Header>{header} | MEA Hack Club</Header>
-            <BackButton href="/projects">Projects</BackButton>
+            <BackButton href={backButtonHref}>{backButtonText}</BackButton>
 
             <Container>
                 {title && <Heading as="h1" variant="title" sx={{ textAlign: 'center', mb: 5 }}>
