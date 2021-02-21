@@ -8,7 +8,7 @@ export default function Page(){
             header="MEA Platformer"
             title="MEA Platformer Project"
         >
-        <Content/>
+            <Content/>
         </ProjectsPage>
     )
 }
