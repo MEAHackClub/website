@@ -1,6 +1,21 @@
 import ProjectsPage from '../../../../components/projects-page'
-import { NavLink, Grid, Text, Card } from 'theme-ui'
-// import Content from './todo-sprites.mdx'
+import { Link, Grid, Text, Card } from 'theme-ui'
+import ElementCards from '../../../../components/element-cards'
+
+const cards = [
+    {
+        title: "Sprites",
+        inProgress: ["Main character (AJ)", "Enemy", "Obstacles (AJ)"],
+    },
+    {
+        title: "Tilemaps",
+        inProgress:["Icy road (Blake)"],
+    },
+    {
+        title: "Background Art",
+        inProgress:["Icy mountain (Kaeleb", "MEA Campus"],
+    },
+]
 
 export default function Page(){
     return(
@@ -11,63 +26,9 @@ export default function Page(){
             title="MEA Platformer - Pixel Art To Do"
         >
             <Text variant="lead">
-                Send any ideas to <NavLink href="mailto:hackclubmea@gmail.com">hackclubmea@gmail.com!</NavLink>
+                Send any ideas to <Link href="mailto:hackclubmea@gmail.com">hackclubmea@gmail.com!</Link>
             </Text>
-            <Grid width="50%" columns="2">
-                <ElementCard
-                    title="Sprites"
-                    inProgress={["Main character (AJ)", "Enemy", "Obstacles (AJ)"]}
-                />
-                <ElementCard
-                    title="Tilemaps"
-                    inProgress={["Icy road (Blake)"]}
-                />
-                <ElementCard
-                    title="Background art"
-                    inProgress={["Icy mountain (Kaeleb)", "MEA Campus"]}
-                />
-            </Grid>
+            <ElementCards cards={cards}/>
         </ProjectsPage>
-    )
-}
-
-function ElementCard({ title, inProgress, done}){
-    return (
-        <Card sx={{ 
-            backgroundImage: t => t.util.gx('cyan', 'blue'),
-            width: '50%'
-        }}>
-            <Text variant="headline">
-                {title}
-            </Text>
-            {inProgress && <div>
-                <Text variant="subheadline">
-                    In progress
-                </Text>
-                <ol>
-                    {inProgress.map(element => {
-                        return <Text variant="subheading">
-                            <li>
-                                {element}
-                            </li>
-                        </Text>
-                    })}
-                </ol>
-            </div> }
-            {done && <div>
-                <Text variant="subheadline">
-                    Done
-                </Text>
-                <ol>
-                    {done.map(element => {
-                        return <Text variant="subheading">
-                            <li>
-                                {element}
-                            </li>
-                        </Text>
-                    })}
-                </ol>
-            </div> }
-        </Card>
     )
 }

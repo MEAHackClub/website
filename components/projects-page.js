@@ -9,7 +9,7 @@ export default function Page({ backButtonHref="/projects", backButtonText="Proje
             <BackButton href={backButtonHref}>{backButtonText}</BackButton>
 
             <Container>
-                {title && <Heading as="h1" variant="title" sx={{ textAlign: 'center', mb: 5 }}>
+                {title && <Heading as="h1" variant="title" sx={{ textAlign: 'center', m: 5 }}>
                     {title}
                 </Heading>}
                 <Container sx={{ borderRadius: '50px', p: 4, bg: 'sheet', mb: 3 }}>
