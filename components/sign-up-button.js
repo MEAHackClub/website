@@ -8,7 +8,7 @@ export default function SignupButton(){
                 top: 2,
                 right: [1, 1, 1, 5, 5],
                 p: [2, 3],
-                fontSize: [5, 5,5, 1,5]
+                fontSize: [5, 5,5, 1,1]
             }}>
                 Sign Up
             </Button>
