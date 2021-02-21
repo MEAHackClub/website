@@ -13,7 +13,7 @@ const cards = [
     },
     {
         title: "Background Art",
-        inProgress:["Icy mountain (Kaeleb", "MEA Campus"],
+        inProgress:["Icy mountain (Kaeleb)", "MEA Campus"],
     },
 ]
 
