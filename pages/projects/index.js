@@ -47,8 +47,29 @@ const ProjectCard = ({ slug, name, description, img, section }) => (
         </Box>
       )}
     </Card>
+    <br/>
   </Link>
 )
+
+const currentProjects = [
+    {
+        name: "MEA Platformer Game", 
+        description: "An MEA-themed platformer game made in pygame!",
+        slug: "mea-platformer"
+    }
+]
+const pastProjects = [
+    {
+        name: "Choose your own adventure game",
+        description: "A text-based Python game",
+        slug: "cyoa",
+    },
+    {
+        name: "Dungeon Crawler", 
+        description: "A modified workshop from Hack Club",
+        slug: "dungeon-crawler",
+    }
+]
 
 export default function Page(){
     return(
@@ -61,16 +82,18 @@ export default function Page(){
             </BackButton>
             <Box sx={{ mt: '4', }}>
                 <Container>
-                    <Heading as="h1" variant="headline" sx={{ mb: 4 }}>
+                    <Heading as="h1" variant="headline" sx={{ textAlign: 'center', mb: 4 }}>
                         Current projects
                     </Heading>
-                        <ProjectCard slug="mea-platformer" name="MEA Platformer Game" description="description" section="current-projects"/>
-                    <Heading as="h1" variant="headline" sx={{ mb: 4 }}>
+                    {currentProjects && currentProjects.map(project => {
+                        return (<ProjectCard {...project} />)
+                    })}
+                    <Heading as="h1" variant="headline" sx={{ textAlign: 'center', mb: 4 }}>
                         Past projects
                     </Heading>
-                        <ProjectCard slug="dungeon-crawler" name="Dungeon Crawler" description="A workshop from Hack Club"/>
-                        <br/>
-                        <ProjectCard slug="cyoa" name="Choose your own adventure game" description="A text based python game"/> 
+                    {pastProjects && pastProjects.map(project => {
+                        return (<ProjectCard {...project} />)
+                    })}
                 </Container>
             </Box>
         </div>
