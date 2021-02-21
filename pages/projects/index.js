@@ -47,7 +47,6 @@ const ProjectCard = ({ slug, name, description, img, section }) => (
         </Box>
       )}
     </Card>
-    <br/>
   </Link>
 )
 
@@ -86,13 +85,19 @@ export default function Page(){
                         Current projects
                     </Heading>
                     {currentProjects && currentProjects.map(project => {
-                        return (<ProjectCard {...project} />)
+                        return ( <div>
+                            <ProjectCard {...project} />
+                            <br/>
+                        </div>)
                     })}
                     <Heading as="h1" variant="headline" sx={{ textAlign: 'center', mb: 4 }}>
                         Past projects
                     </Heading>
                     {pastProjects && pastProjects.map(project => {
-                        return (<ProjectCard {...project} />)
+                        return ( <div>
+                            <ProjectCard {...project} />
+                            <br/>
+                        </div>)
                     })}
                 </Container>
             </Box>
