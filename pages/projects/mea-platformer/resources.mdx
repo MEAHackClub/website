@@ -1,0 +1,38 @@
+import ProjectsPage from '../../../components/projects-page'
+import { Text } from 'theme-ui'
+
+<ProjectsPage 
+    title="Coding resources" 
+    header="Coding resources | MEA Platformer"
+    backButtonHref="/projects/mea-platformer"
+    backButtonText="MEA Platformer"
+>
+
+#### Table of contents
+<br/>
+
+##### [Code explanation](#code-explanation)
+1. [The Player and Enemy class](#player-and-enemy-class)
+2. Adding maps/levels and sprites
+3. The game loop and main.py file
+
+<Text id="code-explanation" variant="title" sx={{ color: 'blue' }}>
+Code explanation
+</Text>
+
+<Text id="player-and-enemy-class" variant="headline" sx={{ color: 'accent' }}>
+The player and enemy class
+</Text>
+
+#### **Prerequisites:**  
+[*Classes*](https://www.w3schools.com/python/python_classes.asp)   
+[*Functions*](https://www.w3schools.com/python/python_functions.asp)    
+#### **The \__init\__() method + player/enemy properties**  
+The player and enemy [classes](https://www.w3schools.com/python/python_classes.asp) are found in [enemy.py](https://repl.it/@ShawnZhuang/MEA-Platformer#enemy.py) and [player.py](https://repl.it/@ShawnZhuang/MEA-Platformer#player.py). Shown in the \__init\__() function, they share the same movement properties, including:
+- `rect`, the hitbox of the player/enemy
+- `air_timer`, the amount of time the player/enemy is in the air
+- `movement`, stores vertical and horizontal movement of the player/enemy. It's an [array](https://www.w3schools.com/python/python_arrays.asp) with two values - `[x, y]`. The first value, `x`, represents horizontal movement, and the second value, `y`, represents vertical movement.
+- `direction`, horizontal direction of player/enemy. -1 = moving left, 0 = not moving horizontally, 1 = moving right.
+- `y_momentum`, vertical speed of the enemy/player.
+
+</ProjectsPage>

@@ -1,4 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Main, NextScript } from 'next/document'
+import { Container, NavLink, Text } from 'theme-ui'
 import { InitializeColorMode } from 'theme-ui'
 
 export default class extends Document {
@@ -13,10 +14,19 @@ export default class extends Document {
         <body>
           <InitializeColorMode />
           <Main />
-          <Head>
-            <link rel="shortcut icon" href="/static/favicon.ico"/>
-          </Head>
           <NextScript />
+          <footer>
+            <Text style={{bg:'sheet', textAlign:'center',width:'100%'}}>
+              <Container>
+                Official club registered at Mt. Everest Academy
+                <br/>  
+                Email us at <b>hackclubmea@gmail.com </b> 
+              </Container>
+              <Container>
+                &copy; MEA Hack Club 2021
+              </Container>
+            </Text>
+          </footer>
         </body>
       </Html>
     )
