@@ -5,15 +5,15 @@ import ElementCards from '../../../../components/element-cards'
 const cards = [
     {
         title: "Sprites",
-        inProgress: ["Main character (AJ)", "Enemy", "Obstacles (AJ)"],
+        inProgress: ["Main character", "Enemy", "Obstacles"],
     },
     {
         title: "Tilemaps",
-        inProgress:["Icy road (Blake)"],
+        inProgress:["Icy road"],
     },
     {
         title: "Background Art",
-        inProgress:["Icy mountain (Kaeleb)", "MEA Campus"],
+        inProgress:["Icy mountain", "MEA Campus"],
     },
 ]
 
