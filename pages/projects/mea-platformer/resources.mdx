@@ -27,12 +27,20 @@ The player and enemy class
 #### **Prerequisites:**  
 [*Classes*](https://www.w3schools.com/python/python_classes.asp)   
 [*Functions*](https://www.w3schools.com/python/python_functions.asp)    
-#### **The \__init\__() method + player/enemy properties**  
+#### **The \__init\__() constructor + player/enemy properties**  
 The player and enemy [classes](https://www.w3schools.com/python/python_classes.asp) are found in [enemy.py](https://repl.it/@ShawnZhuang/MEA-Platformer#enemy.py) and [player.py](https://repl.it/@ShawnZhuang/MEA-Platformer#player.py). Shown in the \__init\__() function, they share the same movement properties, including:
 - `rect`, the hitbox of the player/enemy
 - `air_timer`, the amount of time the player/enemy is in the air
 - `movement`, stores vertical and horizontal movement of the player/enemy. It's an [array](https://www.w3schools.com/python/python_arrays.asp) with two values - `[x, y]`. The first value, `x`, represents horizontal movement, and the second value, `y`, represents vertical movement.
 - `direction`, horizontal direction of player/enemy. -1 = moving left, 0 = not moving horizontally, 1 = moving right.
 - `y_momentum`, vertical speed of the enemy/player.
+#### Player functions
+- `collides`: [returns](https://www.w3schools.com/python/gloss_python_function_return_value.asp) true if the player is colliding the `rect` passed in as a [parameter](https://www.w3schools.com/python/python_functions.asp#:~:text=A%20parameter%20is%20the%20variable,function%20when%20it%20is%20called).
+- `move`: moves the player based off of the player's direction, collisions, and y_momentum. [Called](https://www.w3schools.com/python/gloss_python_function_call.asp) in main.py.
+- `getMovementInput`: gets WASD input from the keyboard.
+#### Enemy functions
+- `moveRoutine`: moves enemy in a routine.
+- `moveRight`, `stopMovement`, and `moveLeft`: moves enemy right, left, or stops movement.
+- `move`: moves the player based off of the enemy's direction, collisions, and y_momentum. [Called](https://www.w3schools.com/python/gloss_python_function_call.asp) in main.py.
 
 </ProjectsPage>
