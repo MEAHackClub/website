@@ -11,10 +11,31 @@ import { Text } from 'theme-ui'
 #### Table of contents
 <br/>
 
+##### [Guides](#guides)
+1. [Adding maps/levels](#adding-a-map)
+2. Adding sprites
+3. Adding an enemy
 ##### [Code explanation](#code-explanation)
 1. [The Player and Enemy class](#player-and-enemy-class)
-2. Adding maps/levels and sprites
-3. The game loop and main.py file
+2. The game loop and main.py file
+
+<Text id="guides" variant="title" sx={{ color: 'blue', vm:'3'}}>
+Guides
+</Text>
+
+<Text id="adding-a-map" variant="headline" sx={{ color: 'accent' }}>
+Adding a map
+</Text>
+
+To add a map, simply 
+1. go to the maps folder and 
+2. create a new file named `map[last map number+1]`. 
+
+For example, if the last map was named `map2`, name your map `map3`. 
+Each number represents a block in the world. 
+To see which available blocks you can paint the map with, go to [map.py](https://repl.it/@ShawnZhuang/MEA-Platformer#map.py).
+In the `draw` function, there should be a list of all the numbers and sprites to paint the map with.
+See [adding sprites](#adding-a-map) (coming soon) to add your own sprite to paint the map with.
 
 <Text id="code-explanation" variant="title" sx={{ color: 'blue' }}>
 Code explanation
