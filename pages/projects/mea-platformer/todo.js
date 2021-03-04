@@ -10,6 +10,10 @@ const cards = [
     {
         title: "Make more levels",
     },
+    {
+        title: "Add projectile to player",
+    },
+    
 ]
 
 export default function Page(){

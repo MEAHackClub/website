@@ -15,7 +15,7 @@ function ElementCard({ title, inProgress, done}){
         <Card variant="interactive" sx={{ 
             // backgroundImage: t => t.util.gx('cyan', 'blue'),
         }}>
-            <Text variant="headline">
+            <Text variant="headline" sx={{ color:'blue' }}>
                 {title}
             </Text>
             {inProgress && <div>
