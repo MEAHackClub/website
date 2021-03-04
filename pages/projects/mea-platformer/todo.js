@@ -4,16 +4,6 @@ import { Grid } from 'theme-ui'
 
 const cards = [
     {
-        title: "Camera Follow",
-        inProgress: ["Basic camera follow", "Parallax scrolling"]
-    },
-    {
-        title: "Make more levels",
-    },
-    {
-        title: "Add projectile to player",
-    },
-    {
         title: "Add health to player",
         inProgress: [
             "current health (property)", 
@@ -28,8 +18,23 @@ const cards = [
         done: [
 
         ]
-    }
-    
+    },
+    {
+        title: "Camera Follow",
+        inProgress: ["Basic camera follow", "Parallax scrolling"]
+    },
+    {
+        title: "Make more levels",
+    },
+    {
+        title: "Add projectile to player",
+    },
+    {
+        title: "Enemy movemeny",
+        inProgress: [
+            "Make movement more customizable",
+        ]
+    },
 ]
 
 export default function Page(){
