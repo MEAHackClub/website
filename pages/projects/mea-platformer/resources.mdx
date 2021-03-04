@@ -9,23 +9,23 @@ import { Text } from 'theme-ui'
     backButtonText="MEA Platformer"
 >
 
-#### Table of contents
-<br/>
-
+## Table of contents
 ##### [Guides](#guides)
 1. [Adding maps/levels](#adding-a-map)
-2. Adding sprites
-3. Adding an enemy
+2. [Adding sprites](#adding-sprites)
+3. [Adding an enemy](#adding-an-enemy)
 ##### [Code explanation](#code-explanation)
 1. [The Player and Enemy class](#player-and-enemy-class)
 2. The game loop and main.py file
 
-<Text id="guides" variant="title" sx={{ color: 'blue', vm:'3'}}>
-Guides
+<Text id="guides">
+
+# Guides
 </Text>
 
-<Text id="adding-a-map" variant="headline" sx={{ color: 'accent' }}>
-Adding a map
+<Text id="adding-a-map">
+
+## Adding a Map
 </Text>
 
 To add a map, simply 
@@ -35,15 +35,67 @@ To add a map, simply
 Each number represents a block in the world. 
 To see which available blocks you can paint the map with, go to [map.py](https://repl.it/@ShawnZhuang/MEA-Platformer#map.py).
 In the `draw` function, there should be a list of all the numbers and sprites to paint the map with.
-See [adding sprites](#adding-a-map) (coming soon) to add your own sprite to paint the map with.
+See [adding sprites](#adding-sprites) to add your own tile to paint the map with.
+
+<Text id="adding-sprites">
+
+## Adding Sprites + How to add it as a tile
+</Text>
+
+1. Upload a png image into the `img` folder
+2. Go to [sprites.py](https://repl.it/@ShawnZhuang/MEA-Platformer#sprites.py) and add in this (replace spriteName and fileName with your sprite name and file name):
+```python
+spriteName = pygame.image.load('img/fileName.png');
+```
+### Adding the sprite as a tile
+1. In the [map.py](https://repl.it/@ShawnZhuang/MEA-Platformer#map.py) file, find the `draw()` function.
+2. Below the two for loops, find the code that looks like this: 
+```python
+if tile == '1':
+    display.blit(sprites.dirt, (x * TILE_SIZE, y * TILE_SIZE))
+elif tile == '2':
+    display.blit(sprites.grass, (x * TILE_SIZE, y * TILE_SIZE))
+```
+3. From [sprites.py](https://repl.it/@ShawnZhuang/MEA-Platformer#sprites.py) add in your sprite at the **end** of the rest of the tile like below, replacing spriteName with the actual spriteName and the lastNumber+1 with 1 + the last number (the number you're assigning the tile to). 
+```python
+elif tile == 'lastNumber+1':
+    display.blit(sprites.spriteName, (x * TILE_SIZE, y * TILE_SIZE))
+```
+Now you can [add the tile in a map](#adding-a-map) using the tile number you assigned it to!
+
+<Text id="adding-sprites">
+
+## Adding an Enemy
+</Text>
+
+1. Make sure you [added a sprite for your enemy](#adding-sprites). Make sure the name of the sprite is the name of your enemy.
+2. Go to [main.py](https://repl.it/@ShawnZhuang/MEA-Platformer#main.py) and scroll down to around line 19. You should see:
+```
+player = Player(pygame.Rect(50, 50, sprites.player.get_width(), sprites.player.get_height()))
+enemy = Enemy(pygame.Rect(50, 50, sprites.enemy.get_width(), sprites.enemy.get_height())
+``` 
+3. Add in your own enemy like this (replacing the 3 enemyName references with your actual enemy name):
+```
+enemyName = Enemy(pygame.Rect(50, 50, sprites.enemyName.get_width(), sprites.enemyName.get_height())
+```
+4. Go to the game loop. Add the enemy on the display like this (again, replacing the 2 enemyName references):
+```python
+display.blit(sprites.enemyName, (enemyName.rect.x, enemyName.rect.y))
+```
+5. Below the movement, add this line (replacing the enemyName reference).
+```
+enemyName.moveRoutine(pygame, map, player)
+```
+Run the code; the enemy should be in there! 
 
 <Text id="code-explanation">
 
 # Code explanation
 </Text>
 
-<Text id="player-and-enemy-class" variant="headline" sx={{ color: 'accent' }}>
-The player and enemy class
+<Text id="player-and-enemy-class">
+
+## The player and enemy class
 </Text>
 
 #### **Prerequisites:**  
