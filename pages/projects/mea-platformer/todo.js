@@ -30,6 +30,9 @@ const cards = [
         title: "Add projectile to player",
     },
     {
+        title: "Fix player movement bug",
+    },
+    {
         title: "Enemy movemeny",
         inProgress: [
             "Make movement more customizable",
