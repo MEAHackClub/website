@@ -5,7 +5,7 @@ import { Grid } from 'theme-ui'
 const cards = [
     {
         title: "Add ball projectile",
-        description: "Create a ball-shaped projectile fired from the player. If the player is going right, fire right, and the same with player moving left. If the player is stationary, fire upwards.",
+        description: "Create a ball-shaped projectile fired from the player. If the player is going right, fire right, and the same with player moving left.",
         inProgress: [
             "Make new projectile object (class)",
             {item: "Add properties to object. Have each variable be passed in from the constructor (init() function)", subitems: [
@@ -32,7 +32,8 @@ const cards = [
                 "if projectile x position is greater than 400 or less than 0, erase it from array (out of screen)",
             ]},
             {item: "add to main game loop", subitems: [
-                "add a projectile to player.projectiles on spacebar (KEYDOWN and K_SPACE. create a projectile at player.rect.x and player.x.y)",
+                "check when keyboard is pressed using KEYDOWN and K_SPACE",
+                "add a projectile to player.projectiles on spacebar press",
                 "run player.move_projectiles in game loop to move projectiles every loop",
             ]},
         ],
