@@ -4,9 +4,29 @@ import { Grid } from 'theme-ui'
 
 const cards = [
     {
+        title: "Camera Follow",
+        inProgress: [
+            "Basic camera follow", 
+            "Parallax scrolling"
+        ],
+    },
+    {
+        title: "Make more levels",
+    },
+    {
+        title: "Add projectile to player",
+    },
+    {
+        title: "Enemy movement",
+        inProgress: [
+            "Make movement more customizable",
+            "Follow the player like zombie",
+        ]
+    },
+    {
         title: "Add ball projectile",
         description: "Create a ball-shaped projectile fired from the player. If the player is going right, fire right, and the same with player moving left.",
-        inProgress: [
+        done: [
             "Make new projectile object (class)",
             {item: "Add properties to object. Have each variable be passed in from the constructor (init() function)", subitems: [
                 "x position",
@@ -37,26 +57,6 @@ const cards = [
                 "run player.move_projectiles in game loop to move projectiles every loop",
             ]},
         ],
-    },
-    {
-        title: "Camera Follow",
-        inProgress: [
-            "Basic camera follow", 
-            "Parallax scrolling"
-        ],
-    },
-    {
-        title: "Make more levels",
-    },
-    {
-        title: "Add projectile to player",
-    },
-    {
-        title: "Enemy movement",
-        inProgress: [
-            "Make movement more customizable",
-            "Follow the player like zombie",
-        ]
     },
     {
         title: "Fix player movement bug",
