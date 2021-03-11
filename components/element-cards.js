@@ -27,7 +27,14 @@ function ElementCard({ description, title, inProgress, done}){
                     In progress
                 </Text>
                 <ol>
-                    {inProgress.map(element => {
+                </ol>
+            </div> }
+            {done && <div>
+                <Text variant="subheadline" sx={{ color: 'red'}}>
+                    Done
+                </Text>
+                <ol>
+                    {done.map(element => {
                         const isString = typeof(element)==="string";
                         const item = isString ? element : element.item
                         return (<div>
@@ -44,20 +51,6 @@ function ElementCard({ description, title, inProgress, done}){
                             </li>
                         </Text>}
                         </div>)
-                    })}
-                </ol>
-            </div> }
-            {done && <div>
-                <Text variant="subheadline" sx={{ color: 'red'}}>
-                    Done
-                </Text>
-                <ol>
-                    {done.map(element => {
-                        return <Text variant="subheading">
-                            <li>
-                                {element}
-                            </li>
-                        </Text>
                     })}
                 </ol>
             </div> }
