@@ -105,7 +105,7 @@ const cards = [
     {
         title: "Enemy movement",
         description: "Have enemy move in a Mario Goomba-style movement. The Goomba travels in one direction, only changing directions when hitting a wall or object.",
-        don: [
+        done: [
             "In moveRoutine in enemy.py, have the enemy move either left or right based on the direction variable.",
             {item: "Switch directions on left/right collision", subitems:[
                 "Collision detection is given by the move() function. Find it in the self.move() function at the bottom of file.",
