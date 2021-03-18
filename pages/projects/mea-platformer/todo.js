@@ -4,29 +4,26 @@ import { Grid } from 'theme-ui'
 
 const cards = [
     {
-        title: "Enemy movement",
-        description: "Have enemy move in a Mario Goomba-style movement. The Goomba travels in one direction, only changing directions when hitting a wall or object.",
-        inProgress: [
-            "In moveRoutine in enemy.py, have the enemy move either left or right based on the direction variable.",
-            {item: "Switch directions on left/right collision", subitems:[
-                "Collision detection is given by the move() function. Find it in the self.move() function at the bottom of file.",
-                "Check for right collision with collisions['right'], etc",
-            ]},
-        ],
-    },
-    {
         title: "Make checkpoints for health regeneration",
         description: "Create checkpoints, where the player can approach to regain health, replacing the current health regeneration system.",
         inProgress: [
+            "Heal player only once (healing item)",
+        ],
+        done: [
             "Delete player healing every 5 seconds in main.py",
             "Add checkpoint as a block (map.py)",
             "Delete collision detection from move() function in helpers.py",
             "In the player.move() function, heal player if checkpoint collision is detected",
-        ]
+        ],
     },
     {
         title: "Make spawn blocks for enemy, player and checkpoints.",
         description: "When a goal is reached, clear all enemies, checkpoints, and players. An enemy spawns on these blocks at the loading of each map.",
+        inProgress: [
+        ]
+    },
+    {
+        title: "Have enemy damage through ball projectile collision",
         inProgress: [
         ]
     },
@@ -41,6 +38,11 @@ const cards = [
             "Basic camera follow", 
             "Parallax scrolling"
         ],
+    },
+    {
+        title: "Powerups",
+        inProgress: [
+        ]
     },
     {
         title: "Make more levels",
@@ -99,6 +101,17 @@ const cards = [
             "max health (property)", 
             "health bar length (property)",
         ]
+    },
+    {
+        title: "Enemy movement",
+        description: "Have enemy move in a Mario Goomba-style movement. The Goomba travels in one direction, only changing directions when hitting a wall or object.",
+        don: [
+            "In moveRoutine in enemy.py, have the enemy move either left or right based on the direction variable.",
+            {item: "Switch directions on left/right collision", subitems:[
+                "Collision detection is given by the move() function. Find it in the self.move() function at the bottom of file.",
+                "Check for right collision with collisions['right'], etc",
+            ]},
+        ],
     },
 ]
 
