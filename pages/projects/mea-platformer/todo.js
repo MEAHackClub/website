@@ -4,6 +4,28 @@ import { Grid } from 'theme-ui'
 
 const cards = [
     {
+        title: "Make checkpoints for health regeneration",
+        inProgress: [
+            "Add checkpoint as a block (map.py)",
+            "Have function for player that detects when it's close to the block",
+        ]
+    },
+    {
+        title: "Enemy movement",
+        description: "Have enemy move in a Mario Goomba-style movement. The Goomba travels in one direction, only changing directions when hitting a wall or object.",
+        inProgress: [
+            "Have enemy move in one direction",
+            "Create enemy collision detection function",
+            "Have enemy reverse directions when colliding on wall",
+        ],
+    },
+    {
+        title: "Make spawn blocks for enemy, player and checkpoints.",
+        description: "When a goal is reached, clear all enemies, checkpoints, and players. An enemy spawns on these blocks at the loading of each map.",
+        inProgress: [
+        ]
+    },
+    {
         title: "Camera Follow",
         inProgress: [
             "Basic camera follow", 
@@ -12,16 +34,9 @@ const cards = [
     },
     {
         title: "Make more levels",
-    },
-    {
-        title: "Add projectile to player",
-    },
-    {
-        title: "Enemy movement",
         inProgress: [
-            "Make movement more customizable",
-            "Follow the player like zombie",
-        ]
+
+        ],
     },
     {
         title: "Add ball projectile",

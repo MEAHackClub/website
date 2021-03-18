@@ -27,6 +27,24 @@ function ElementCard({ description, title, inProgress, done}){
                     In progress
                 </Text>
                 <ol>
+                    {inProgress.map(element => {
+                        const isString = typeof(element)==="string";
+                        const item = isString ? element : element.item
+                        return (<div>
+                        {<Text variant="subheading">
+                            <li>
+                                {item}
+                                <ul>
+                                    {element.subitems && element.subitems.map(subitem => {
+                                        return (<li>
+                                            {subitem}
+                                        </li>)
+                                    })}
+                                </ul>
+                            </li>
+                        </Text>}
+                        </div>)
+                    })}
                 </ol>
             </div> }
             {done && <div>
