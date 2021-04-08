@@ -34,7 +34,13 @@ const cards = [
   },
   {
     title: 'Have enemy damage through ball projectile collision',
-    inProgress: []
+    inProgress: [
+      'Give the projectile a hitbox (rect), (hint: pygame.draw.circle returns a rect)',
+      'Give enemy health properties (copy from player)',
+      'Copy heal and do damage functions from player',
+      'Give projectile a function that checks for collision on enemy (rect.colliderect)',
+      'Damage enemy health on collision'
+    ]
   },
   {
     title: 'Player death and menu system',
